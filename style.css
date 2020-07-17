@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.menu-burger {
+  background: #fff;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.menu-burger::before,
+.menu-burger::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.menu-burger::before {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.menu-burger::after {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.open.menu-btn .menu-burger {
+  background: transparent;
+}
+
+.open.menu-btn .menu-burger::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.open.menu-btn .menu-burger::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+/*# sourceMappingURL=style.css.map */
